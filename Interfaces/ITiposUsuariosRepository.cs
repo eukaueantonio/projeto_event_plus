@@ -4,10 +4,20 @@ namespace projeto_event_plus.Interfaces
 {
     public interface ITiposUsuariosRepository
     {
+        //cadastrar
         void Cadastrar(TiposUsuarios tiposUsuarios);
-        List<TiposUsuarios> Listar();
+
+        //deletar
         void Deletar (Guid id);
-        void Atualizar(Guid id);
+
+        //listar
+        List<TiposUsuarios> Listar();
+
+        //buscar por id 
         TiposUsuarios BuscarPorId(Guid id);
+
+        //atualizar
+        void Atualizar(Guid id, TiposUsuarios tiposUsuarios);
+
     }
 }
